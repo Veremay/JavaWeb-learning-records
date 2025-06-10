@@ -1,0 +1,7 @@
+package com.my2424huuu;
+
+public class HelloWorld {
+    public static void main(String[] args) {
+        System.out.println("hello world!");
+    }
+}
