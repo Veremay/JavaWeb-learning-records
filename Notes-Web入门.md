@@ -1,3 +1,41 @@
+# Maven基础
+
+## 生命周期
+
+Maven中有3套相互独立的生命周期:
+
+* clean:清理工作。主要关注`clean`阶段
+
+* default:核心工作，如:编译、测试、打包、安装、部署等。主要关注`compile` `test` `package` `install`阶段
+
+* site:生成报告、发布站点等。
+
+- clean:移除上一次构建生成的文件
+- compile:编译项目源代码
+- test:使用合适的单元测试框架运行测试(junit)
+- package:将编译后的文件打包，如:jar、war等
+- install:安装项目到本地仓库
+
+在**同一套**生命周期中，当运行后面的阶段时，前面的阶段都会运行。
+
+## 测试
+
+![img.png](Notes-Assets/测试阶段.png)
+
+单元测试：白盒测试
+
+集成测试：灰盒
+
+系统测试：黑盒
+
+验收测试：黑盒测试
+
+![img.png](Notes-Assets/测试方法.png)
+
+Junit编写单元测试，还有断言的功能。用的时候可以搜。
+
+
+
 # Web入门
 
 ## HTTP协议
@@ -46,4 +84,27 @@
 | 431 | Request Header Fields Too Large | 请求头太大，服务器不愿意处理请求，因为它的头部字段太大。请求可以在减少请求头域的大小后重新提交。 |
 | 500 | Internal Server Error | 服务器发生不可预期的错误，服务器出异常了，赶紧看日志去吧 |
 | 503 | Service Unavailable | 服务器尚未准备好处理请求，服务器刚启动，还未初始化好 |
+
+## 分层解耦
+
+分为三个步骤：数据访问，逻辑处理，接受请求、响应数据
+
+单一职责原则，利于代码可拓展性
+
+![三层架构.png](Notes-Assets/三层架构.png)
+
+![img.png](Notes-Assets/三层架构的实现.png)
+
+## 控制反转IOC和依赖注入DI
+
+![img.png](Notes-Assets/ICO&DI.png)
+
+![img.png](Notes-Assets/bean容器.png)
+
+@SpringBootApplication 具有包扫描作用，默认扫描当前包及其子包，所以最好把代码放在启动类根目录下
+
+![img.png](Notes-Assets/bean注入注意事项.png)
+像Qualifier和Autowired这种，都是spring框架提供的，而Resource是jdk提供的
+
+![img.png](Notes-Assets/依赖注入的注解.png)
 
