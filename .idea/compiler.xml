@@ -10,5 +10,8 @@
         <module name="springweb-web-quickstart" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="springboot-web-02-threeLayers" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
 </project>

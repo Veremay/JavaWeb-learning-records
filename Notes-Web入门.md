@@ -1,3 +1,5 @@
+[在线讲义](https://heuqqdmbyk.feishu.cn/wiki/MQ95wDTtji6ob6kiRkyc9jamnwg)
+
 # Maven基础
 
 ## 生命周期
@@ -97,6 +99,8 @@ Junit编写单元测试，还有断言的功能。用的时候可以搜。
 
 ## 控制反转IOC和依赖注入DI
 
+高内聚、低耦合
+
 ![img.png](Notes-Assets/ICO&DI.png)
 
 ![img.png](Notes-Assets/bean容器.png)
@@ -108,3 +112,4 @@ Junit编写单元测试，还有断言的功能。用的时候可以搜。
 
 ![img.png](Notes-Assets/依赖注入的注解.png)
 
+**大白话解释**：[Springboot中的IOC与DI详解](https://chat.deepseek.com/share/1kscagn66eeu2uanm4)
