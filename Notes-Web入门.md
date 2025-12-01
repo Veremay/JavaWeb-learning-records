@@ -113,3 +113,25 @@ Junit编写单元测试，还有断言的功能。用的时候可以搜。
 ![img.png](Notes-Assets/依赖注入的注解.png)
 
 **大白话解释**：[Springboot中的IOC与DI详解](https://chat.deepseek.com/share/1kscagn66eeu2uanm4)
+
+# SQL
+
+模板
+
+```sql
+SELECT
+    字段列表
+FROM
+    表名列表
+WHERE
+    条件列表
+GROUP  BY
+    分组字段列表
+HAVING
+    分组后条件列表
+ORDER BY
+    排序字段列表
+LIMIT
+    分页参数
+
+```

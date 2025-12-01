@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="maven-project01" />
         <module name="springweb-web-quickstart" />
+        <module name="jdbc-demo1" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
