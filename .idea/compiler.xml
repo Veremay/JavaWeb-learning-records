@@ -7,6 +7,8 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="maven-project01" />
+        <module name="tlias-web-management" />
+        <module name="springboot-mybatis" />
         <module name="springweb-web-quickstart" />
         <module name="jdbc-demo1" />
       </profile>
