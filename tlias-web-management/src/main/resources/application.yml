@@ -1,3 +1,6 @@
+server:
+  port: 1001
+
 spring:
   application:
     name: tlias-web-management
@@ -10,3 +13,4 @@ spring:
 mybatis:
   configuration:
     log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+    map-underscore-to-camel-case: true # 开启驼峰命名和下划线明明的映射

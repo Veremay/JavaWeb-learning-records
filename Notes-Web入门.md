@@ -135,3 +135,77 @@ LIMIT
     分页参数
 
 ```
+
+
+Spring各层调用时序图：
+
+```mermaid
+sequenceDiagram
+    participant Client as 客户端
+    participant Controller as DeptController
+    participant Service as DeptServiceImpl
+    participant Mapper as DeptMapper
+    participant DB as 数据库
+    
+    note over Controller: @RestController<br>@RequestMapping("/dept")
+    note over Service: @Service<br>实现DeptService接口
+    note over Mapper: @Mapper<br>MyBatis接口
+    
+    Client->>Controller: GET /dept/1
+    activate Controller
+    
+    Controller->>Service: deptService.getById(1)
+    note right of Controller: @Autowired注入Service
+    
+    activate Service
+    Service->>Mapper: deptMapper.selectById(1)
+    note right of Service: @Autowired注入Mapper
+    
+    activate Mapper
+    Mapper->>DB: 执行SQL: SELECT * FROM dept WHERE id=1
+    DB-->>Mapper: 返回查询结果
+    Mapper-->>Service: 返回Dept对象
+    deactivate Mapper
+    
+    Service-->>Controller: 返回Dept对象
+    deactivate Service
+    
+    Controller->>Controller: 封装Result对象
+    Controller-->>Client: 返回JSON响应<br>{"code":200, "data":{...}, "msg":"成功"}
+    deactivate Controller
+```
+
+依赖注入关系图：
+
+```mermaid
+graph TD
+    subgraph "Spring IoC容器"
+        C_Bean[DeptController Bean]
+        S_Bean[DeptServiceImpl Bean]
+        M_Bean[DeptMapper Proxy Bean]
+    end
+
+    subgraph "注解标记"
+        C_Anno[标注: @RestController]
+        S_Anno[标注: @Service]
+        M_Anno[标注: @Mapper]
+    end
+    
+    subgraph "依赖注入"
+        DI1[使用: @Autowired]
+        DI2[使用: @Autowired]
+    end
+
+    C_Anno --> C_Bean
+    S_Anno --> S_Bean
+    M_Anno --> M_Bean
+    
+    C_Bean -- "@Autowired DeptService" --> S_Bean
+    S_Bean -- "@Autowired DeptMapper" --> M_Bean
+    
+    style C_Bean fill:#bbdefb
+    style S_Bean fill:#e1bee7
+    style M_Bean fill:#c8e6c9
+```
+
+![img.png](Notes-Assets/ngix反向代理图.png)
