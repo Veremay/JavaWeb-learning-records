@@ -3,6 +3,7 @@ package com.my2424huuu.controller;
 import com.my2424huuu.pojo.Dept;
 import com.my2424huuu.pojo.Result;
 import com.my2424huuu.service.DeptService;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -11,6 +12,7 @@ import java.util.List;
 /**
  * 部门管理控制器
  */
+@Slf4j
 @RequestMapping("/depts")
 @RestController
 public class DeptController {
@@ -21,7 +23,8 @@ public class DeptController {
     //@RequestMapping(value="/depts", method= RequestMethod.GET) // 请求路径
     @GetMapping
     public Result list(){
-        System.out.println("查询全部部门数据");
+//        System.out.println("查询全部部门数据");
+        log.info("查询全部部门数据");
         List<Dept> deptList = deptService.findAll();
         return Result.success(deptList);
     }
@@ -31,7 +34,8 @@ public class DeptController {
      */
     @DeleteMapping
     public Result delete(Integer id){
-        System.out.println("根据id删除部门, id=" + id);
+//        System.out.println("根据id删除部门, id=" + id);
+        log.info("根据id删除部门, id: {}" , id);
         deptService.deleteById(id);
         return Result.success();
     }
@@ -41,7 +45,8 @@ public class DeptController {
      */
     @PostMapping
     public Result save(@RequestBody Dept dept){
-        System.out.println("新增部门, dept=" + dept);
+//        System.out.println("新增部门, dept=" + dept);
+        log.info("新增部门, dept: {}" , dept);
         deptService.add(dept);
         return Result.success();
     }
@@ -51,7 +56,8 @@ public class DeptController {
      */
     @GetMapping("/{id}")
     public Result getById(@PathVariable Integer id){
-        System.out.println("根据ID查询, id=" + id);
+//        System.out.println("根据ID查询, id=" + id);
+        log.info("根据ID查询, id: {}" , id);
         Dept dept = deptService.getById(id);
         return Result.success(dept);
     }
@@ -61,7 +67,8 @@ public class DeptController {
      */
     @PutMapping
     public Result update(@RequestBody Dept dept){
-        System.out.println("修改部门, dept=" + dept);
+//        System.out.println("修改部门, dept=" + dept);
+        log.info("修改部门, dept: {}" , dept);
         deptService.update(dept);
         return Result.success();
     }
