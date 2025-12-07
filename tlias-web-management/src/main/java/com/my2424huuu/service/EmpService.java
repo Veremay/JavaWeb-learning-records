@@ -1,5 +1,6 @@
 package com.my2424huuu.service;
 
+import com.my2424huuu.pojo.EmpQueryParam;
 import com.my2424huuu.pojo.PageResult;
 
 public interface EmpService {
@@ -8,5 +9,10 @@ public interface EmpService {
      * @param page 页码
      * @param pageSize 每页记录数
      */
-    PageResult page(Integer page, Integer pageSize);
+//    PageResult page(Integer page, Integer pageSize);
+    /**
+     * 分页查询
+     */
+    //PageResult page(Integer page, Integer pageSize, String name, Integer gender, LocalDate begin, LocalDate end);
+    PageResult page(EmpQueryParam empQueryParam);
 }

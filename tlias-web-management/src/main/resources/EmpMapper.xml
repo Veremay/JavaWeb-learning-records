@@ -5,8 +5,16 @@
 <mapper namespace="com.my2424huuu.mapper.EmpMapper">
     <select id="list" resultType="com.my2424huuu.pojo.Emp">
         select e.*, d.name deptName from emp as e left join dept as d on e.dept_id = d.id
-        where e.name like concat('%',#{name},'%')
-          and e.gender = #{gender}
-          and e.entry_date between #{begin} and #{end}
+        <where>
+            <if test="name != null and name != ''">
+                e.name like concat('%',#{name},'%')
+            </if>
+            <if test="gender != null">
+                and e.gender = #{gender}
+            </if>
+            <if test="begin != null and end != null">
+                and e.entry_date between #{begin} and #{end}
+            </if>
+        </where>
     </select>
 </mapper>

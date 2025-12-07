@@ -4,6 +4,7 @@ import com.github.pagehelper.Page;
 import com.github.pagehelper.PageHelper;
 import com.my2424huuu.mapper.EmpMapper;
 import com.my2424huuu.pojo.Emp;
+import com.my2424huuu.pojo.EmpQueryParam;
 import com.my2424huuu.pojo.PageResult;
 import com.my2424huuu.service.EmpService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -37,15 +38,25 @@ public class EmpServiceImpl implements EmpService {
     以下是使用pageHelper插件的做法
      */
     @Override
-    public PageResult page(Integer page, Integer pageSize) {
-        //1. 设置分页参数
-        PageHelper.startPage(page,pageSize);
+//    public PageResult page(Integer page, Integer pageSize) {
+//        //1. 设置分页参数
+//        PageHelper.startPage(page,pageSize);
+//
+//        //2. 执行查询
+//        List<Emp> empList = empMapper.list();
+//        Page<Emp> p = (Page<Emp>) empList;
+//
+//        //3. 封装结果
+//        return new PageResult(p.getTotal(), p.getResult());
+//    }
 
+    public PageResult page(EmpQueryParam empQueryParam) {
+        //1. 设置PageHelper分页参数
+        PageHelper.startPage(empQueryParam.getPage(), empQueryParam.getPageSize());
         //2. 执行查询
-        List<Emp> empList = empMapper.list();
-        Page<Emp> p = (Page<Emp>) empList;
-
-        //3. 封装结果
+        List<Emp> empList = empMapper.list(empQueryParam);
+        //3. 封装分页结果
+        Page<Emp> p = (Page<Emp>)empList;
         return new PageResult(p.getTotal(), p.getResult());
     }
 }

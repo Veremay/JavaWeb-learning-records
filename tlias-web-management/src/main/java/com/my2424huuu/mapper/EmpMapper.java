@@ -1,6 +1,7 @@
 package com.my2424huuu.mapper;
 
 import com.my2424huuu.pojo.Emp;
+import com.my2424huuu.pojo.EmpQueryParam;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Select;
 
@@ -27,7 +28,11 @@ public interface EmpMapper {
     /**
      * 查询所有的员工及其对应的部门名称
      */
-    @Select("select e.*, d.name deptName from emp as e left join dept as d on e.dept_id = d.id")
-    public List<Emp> list();
+//    @Select("select e.*, d.name deptName from emp as e left join dept as d on e.dept_id = d.id")
+//    public List<Emp> list();
+    /**
+     * 根据查询条件查询员工
+     */
+    List<Emp> list(EmpQueryParam empQueryParam);
 
 }
