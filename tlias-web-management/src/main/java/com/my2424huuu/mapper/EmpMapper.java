@@ -2,7 +2,9 @@ package com.my2424huuu.mapper;
 
 import com.my2424huuu.pojo.Emp;
 import com.my2424huuu.pojo.EmpQueryParam;
+import org.apache.ibatis.annotations.Insert;
 import org.apache.ibatis.annotations.Mapper;
+import org.apache.ibatis.annotations.Options;
 import org.apache.ibatis.annotations.Select;
 
 import java.util.List;
@@ -35,4 +37,13 @@ public interface EmpMapper {
      */
     List<Emp> list(EmpQueryParam empQueryParam);
 
+    /**
+     * 新增员工数据
+     *
+     * 为什么要加@Options这个注解，因为前端传入的参数是emp类型，而empid是数据库自动生成的，要保存empid需要他在插入员工之后返回一个生成的id，这样来记录工作经历是谁的
+     */
+    @Options(useGeneratedKeys = true, keyProperty = "id")
+    @Insert("insert into emp(username, name, gender, phone, job, salary, image, entry_date, dept_id, create_time, update_time) " +
+            "values (#{username},#{name},#{gender},#{phone},#{job},#{salary},#{image},#{entryDate},#{deptId},#{createTime},#{updateTime})")
+    void insert(Emp emp);
 }

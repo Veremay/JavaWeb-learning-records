@@ -1,3 +1,20 @@
+2025-12-09 23:22:30.894 [main] INFO  c.m.TliasWebManagementApplication - Starting TliasWebManagementApplication using Java 17.0.12 on myhuuu with PID 43172 (E:\amaymay\lernen\Java\JavaWeb\tlias-web-management\target\classes started by 胡卟归- in E:\amaymay\lernen\Java\JavaWeb)
+2025-12-09 23:22:30.904 [main] INFO  c.m.TliasWebManagementApplication - No active profile set, falling back to 1 default profile: "default"
+2025-12-09 23:22:32.208 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 1001 (http)
+2025-12-09 23:22:32.220 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-1001"]
+2025-12-09 23:22:32.221 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-12-09 23:22:32.221 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.68]
+2025-12-09 23:22:32.359 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-12-09 23:22:32.360 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1367 ms
+2025-12-09 23:22:32.874 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+2025-12-09 23:22:33.126 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-1001"]
+2025-12-09 23:22:33.163 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 1001 (http) with context path ''
+2025-12-09 23:22:33.178 [main] INFO  c.m.TliasWebManagementApplication - Started TliasWebManagementApplication in 3.01 seconds (JVM running for 4.676)
+2025-12-09 23:22:43.164 [http-nio-1001-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-09 23:22:43.165 [http-nio-1001-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-12-09 23:22:43.165 [http-nio-1001-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2025-12-09 23:22:44.301 [http-nio-1001-exec-4] INFO  c.m.controller.DeptController - 查询全部部门数据
+2025-12-09 23:22:44.315 [http-nio-1001-exec-3] INFO  c.m.controller.EmpController - 查询请求参数： EmpQueryParam(page=1, pageSize=10, name=, gender=null, begin=null, end=null)
 2025-12-09 23:22:44.322 [http-nio-1001-exec-3] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.apache.ibatis.binding.BindingException: Invalid bound statement (not found): com.my2424huuu.mapper.EmpMapper.list] with root cause
 org.apache.ibatis.binding.BindingException: Invalid bound statement (not found): com.my2424huuu.mapper.EmpMapper.list
 	at org.apache.ibatis.binding.MapperMethod$SqlCommand.<init>(MapperMethod.java:235)
@@ -60,6 +77,9 @@ org.apache.ibatis.binding.BindingException: Invalid bound statement (not found):
 	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.base/java.lang.Thread.run(Thread.java:842)
+2025-12-09 23:22:44.324 [http-nio-1001-exec-4] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-12-09 23:22:44.479 [http-nio-1001-exec-4] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-12-09 23:22:48.618 [http-nio-1001-exec-5] INFO  c.m.controller.EmpController - 查询请求参数： EmpQueryParam(page=1, pageSize=10, name=, gender=null, begin=null, end=null)
 2025-12-09 23:22:48.619 [http-nio-1001-exec-5] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.apache.ibatis.binding.BindingException: Invalid bound statement (not found): com.my2424huuu.mapper.EmpMapper.list] with root cause
 org.apache.ibatis.binding.BindingException: Invalid bound statement (not found): com.my2424huuu.mapper.EmpMapper.list
 	at org.apache.ibatis.binding.MapperMethod$SqlCommand.<init>(MapperMethod.java:235)
@@ -122,6 +142,10 @@ org.apache.ibatis.binding.BindingException: Invalid bound statement (not found):
 	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.base/java.lang.Thread.run(Thread.java:842)
+2025-12-09 23:22:48.640 [http-nio-1001-exec-6] INFO  c.m.controller.DeptController - 查询全部部门数据
+2025-12-09 23:23:04.844 [http-nio-1001-exec-8] INFO  c.m.controller.DeptController - 查询全部部门数据
+2025-12-09 23:23:06.059 [http-nio-1001-exec-9] INFO  c.m.controller.DeptController - 查询全部部门数据
+2025-12-09 23:23:06.059 [http-nio-1001-exec-7] INFO  c.m.controller.EmpController - 查询请求参数： EmpQueryParam(page=1, pageSize=10, name=, gender=null, begin=null, end=null)
 2025-12-09 23:23:06.060 [http-nio-1001-exec-7] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.apache.ibatis.binding.BindingException: Invalid bound statement (not found): com.my2424huuu.mapper.EmpMapper.list] with root cause
 org.apache.ibatis.binding.BindingException: Invalid bound statement (not found): com.my2424huuu.mapper.EmpMapper.list
 	at org.apache.ibatis.binding.MapperMethod$SqlCommand.<init>(MapperMethod.java:235)
@@ -184,6 +208,9 @@ org.apache.ibatis.binding.BindingException: Invalid bound statement (not found):
 	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.base/java.lang.Thread.run(Thread.java:842)
+2025-12-09 23:24:31.764 [http-nio-1001-exec-10] INFO  c.m.controller.DeptController - 查询全部部门数据
+2025-12-09 23:24:33.063 [http-nio-1001-exec-2] INFO  c.m.controller.DeptController - 查询全部部门数据
+2025-12-09 23:24:33.064 [http-nio-1001-exec-1] INFO  c.m.controller.EmpController - 查询请求参数： EmpQueryParam(page=1, pageSize=10, name=, gender=null, begin=null, end=null)
 2025-12-09 23:24:33.064 [http-nio-1001-exec-1] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.apache.ibatis.binding.BindingException: Invalid bound statement (not found): com.my2424huuu.mapper.EmpMapper.list] with root cause
 org.apache.ibatis.binding.BindingException: Invalid bound statement (not found): com.my2424huuu.mapper.EmpMapper.list
 	at org.apache.ibatis.binding.MapperMethod$SqlCommand.<init>(MapperMethod.java:235)
@@ -246,6 +273,80 @@ org.apache.ibatis.binding.BindingException: Invalid bound statement (not found):
 	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.base/java.lang.Thread.run(Thread.java:842)
+2025-12-09 23:25:00.698 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-12-09 23:25:00.705 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-12-09 23:25:05.897 [main] INFO  c.m.TliasWebManagementApplication - Starting TliasWebManagementApplication using Java 17.0.12 on myhuuu with PID 62748 (E:\amaymay\lernen\Java\JavaWeb\tlias-web-management\target\classes started by 胡卟归- in E:\amaymay\lernen\Java\JavaWeb)
+2025-12-09 23:25:05.900 [main] INFO  c.m.TliasWebManagementApplication - No active profile set, falling back to 1 default profile: "default"
+2025-12-09 23:25:06.839 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 1001 (http)
+2025-12-09 23:25:06.847 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-1001"]
+2025-12-09 23:25:06.847 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-12-09 23:25:06.848 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.68]
+2025-12-09 23:25:06.933 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-12-09 23:25:06.934 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 988 ms
+2025-12-09 23:25:07.235 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+2025-12-09 23:25:07.356 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-1001"]
+2025-12-09 23:25:07.374 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 1001 (http) with context path ''
+2025-12-09 23:25:07.384 [main] INFO  c.m.TliasWebManagementApplication - Started TliasWebManagementApplication in 1.926 seconds (JVM running for 2.709)
+2025-12-09 23:25:09.187 [http-nio-1001-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-09 23:25:09.187 [http-nio-1001-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-12-09 23:25:09.187 [http-nio-1001-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2025-12-09 23:25:09.204 [http-nio-1001-exec-2] INFO  c.m.controller.DeptController - 查询全部部门数据
+2025-12-09 23:25:09.222 [http-nio-1001-exec-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-12-09 23:25:09.372 [http-nio-1001-exec-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-12-09 23:25:13.467 [http-nio-1001-exec-4] INFO  c.m.controller.DeptController - 查询全部部门数据
+2025-12-09 23:25:30.568 [http-nio-1001-exec-6] INFO  c.m.controller.DeptController - 查询全部部门数据
+2025-12-09 23:27:14.810 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-12-09 23:27:14.814 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-12-09 23:27:20.236 [main] INFO  c.m.TliasWebManagementApplication - Starting TliasWebManagementApplication using Java 17.0.12 on myhuuu with PID 31644 (E:\amaymay\lernen\Java\JavaWeb\tlias-web-management\target\classes started by 胡卟归- in E:\amaymay\lernen\Java\JavaWeb)
+2025-12-09 23:27:20.240 [main] INFO  c.m.TliasWebManagementApplication - No active profile set, falling back to 1 default profile: "default"
+2025-12-09 23:27:21.357 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 1001 (http)
+2025-12-09 23:27:21.364 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-1001"]
+2025-12-09 23:27:21.365 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-12-09 23:27:21.365 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.68]
+2025-12-09 23:27:21.452 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-12-09 23:27:21.452 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1144 ms
+2025-12-09 23:27:21.763 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+2025-12-09 23:27:21.880 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-1001"]
+2025-12-09 23:27:21.898 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 1001 (http) with context path ''
+2025-12-09 23:27:21.907 [main] INFO  c.m.TliasWebManagementApplication - Started TliasWebManagementApplication in 2.182 seconds (JVM running for 2.974)
+2025-12-09 23:31:19.055 [main] INFO  c.m.TliasWebManagementApplication - Starting TliasWebManagementApplication using Java 17.0.12 on myhuuu with PID 57200 (E:\amaymay\lernen\Java\JavaWeb\tlias-web-management\target\classes started by 胡卟归- in E:\amaymay\lernen\Java\JavaWeb)
+2025-12-09 23:31:19.088 [main] INFO  c.m.TliasWebManagementApplication - No active profile set, falling back to 1 default profile: "default"
+2025-12-09 23:31:20.906 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 1001 (http)
+2025-12-09 23:31:20.919 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-1001"]
+2025-12-09 23:31:20.920 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-12-09 23:31:20.920 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.68]
+2025-12-09 23:31:21.045 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-12-09 23:31:21.045 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1804 ms
+2025-12-09 23:31:21.525 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+2025-12-09 23:31:21.728 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-1001"]
+2025-12-09 23:31:21.761 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 1001 (http) with context path ''
+2025-12-09 23:31:21.777 [main] INFO  c.m.TliasWebManagementApplication - Started TliasWebManagementApplication in 3.545 seconds (JVM running for 5.482)
+2025-12-09 23:31:44.578 [http-nio-1001-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-09 23:31:44.579 [http-nio-1001-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-12-09 23:31:44.580 [http-nio-1001-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-12-09 23:31:44.603 [http-nio-1001-exec-1] INFO  c.m.controller.DeptController - 查询全部部门数据
+2025-12-09 23:31:44.627 [http-nio-1001-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-12-09 23:31:44.831 [http-nio-1001-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-12-09 23:37:13.176 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-12-09 23:37:13.183 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-12-09 23:37:18.929 [main] INFO  c.m.TliasWebManagementApplication - Starting TliasWebManagementApplication using Java 17.0.12 on myhuuu with PID 70756 (E:\amaymay\lernen\Java\JavaWeb\tlias-web-management\target\classes started by 胡卟归- in E:\amaymay\lernen\Java\JavaWeb)
+2025-12-09 23:37:18.932 [main] INFO  c.m.TliasWebManagementApplication - No active profile set, falling back to 1 default profile: "default"
+2025-12-09 23:37:19.905 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 1001 (http)
+2025-12-09 23:37:19.914 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-1001"]
+2025-12-09 23:37:19.915 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-12-09 23:37:19.915 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.68]
+2025-12-09 23:37:20.022 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-12-09 23:37:20.022 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1051 ms
+2025-12-09 23:37:20.385 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+2025-12-09 23:37:20.523 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-1001"]
+2025-12-09 23:37:20.544 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 1001 (http) with context path ''
+2025-12-09 23:37:20.554 [main] INFO  c.m.TliasWebManagementApplication - Started TliasWebManagementApplication in 2.049 seconds (JVM running for 3.419)
+2025-12-09 23:37:35.670 [http-nio-1001-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-09 23:37:35.671 [http-nio-1001-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-12-09 23:37:35.671 [http-nio-1001-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2025-12-09 23:37:35.693 [http-nio-1001-exec-2] INFO  c.m.controller.DeptController - 查询全部部门数据
+2025-12-09 23:37:35.713 [http-nio-1001-exec-1] INFO  c.m.controller.EmpController - 查询请求参数： EmpQueryParam(page=1, pageSize=10, name=, gender=null, begin=null, end=null)
+2025-12-09 23:37:35.715 [http-nio-1001-exec-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
 2025-12-09 23:38:32.285 [http-nio-1001-exec-1] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.apache.ibatis.binding.BindingException: Invalid bound statement (not found): com.my2424huuu.mapper.EmpMapper.list] with root cause
 org.apache.ibatis.binding.BindingException: Invalid bound statement (not found): com.my2424huuu.mapper.EmpMapper.list
 	at org.apache.ibatis.binding.MapperMethod$SqlCommand.<init>(MapperMethod.java:235)
@@ -308,6 +409,27 @@ org.apache.ibatis.binding.BindingException: Invalid bound statement (not found):
 	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.base/java.lang.Thread.run(Thread.java:842)
+2025-12-09 23:38:32.382 [http-nio-1001-exec-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-12-09 23:38:32.455 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-12-09 23:38:32.459 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-12-09 23:38:37.388 [main] INFO  c.m.TliasWebManagementApplication - Starting TliasWebManagementApplication using Java 17.0.12 on myhuuu with PID 56936 (E:\amaymay\lernen\Java\JavaWeb\tlias-web-management\target\classes started by 胡卟归- in E:\amaymay\lernen\Java\JavaWeb)
+2025-12-09 23:38:37.393 [main] INFO  c.m.TliasWebManagementApplication - No active profile set, falling back to 1 default profile: "default"
+2025-12-09 23:38:38.521 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 1001 (http)
+2025-12-09 23:38:38.531 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-1001"]
+2025-12-09 23:38:38.531 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-12-09 23:38:38.531 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.68]
+2025-12-09 23:38:38.632 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-12-09 23:38:38.632 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1180 ms
+2025-12-09 23:38:39.003 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+2025-12-09 23:38:39.134 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-1001"]
+2025-12-09 23:38:39.152 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 1001 (http) with context path ''
+2025-12-09 23:38:39.162 [main] INFO  c.m.TliasWebManagementApplication - Started TliasWebManagementApplication in 2.375 seconds (JVM running for 3.588)
+2025-12-09 23:38:43.861 [http-nio-1001-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-09 23:38:43.861 [http-nio-1001-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-12-09 23:38:43.862 [http-nio-1001-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-12-09 23:38:43.882 [http-nio-1001-exec-2] INFO  c.m.controller.DeptController - 查询全部部门数据
+2025-12-09 23:38:43.900 [http-nio-1001-exec-1] INFO  c.m.controller.EmpController - 查询请求参数： EmpQueryParam(page=1, pageSize=10, name=, gender=null, begin=null, end=null)
+2025-12-09 23:38:48.183 [http-nio-1001-exec-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
 2025-12-09 23:39:38.406 [http-nio-1001-exec-1] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.apache.ibatis.binding.BindingException: Invalid bound statement (not found): com.my2424huuu.mapper.EmpMapper.list] with root cause
 org.apache.ibatis.binding.BindingException: Invalid bound statement (not found): com.my2424huuu.mapper.EmpMapper.list
 	at org.apache.ibatis.binding.MapperMethod$SqlCommand.<init>(MapperMethod.java:235)
@@ -370,6 +492,7 @@ org.apache.ibatis.binding.BindingException: Invalid bound statement (not found):
 	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.base/java.lang.Thread.run(Thread.java:842)
+2025-12-09 23:39:43.842 [http-nio-1001-exec-3] INFO  c.m.controller.EmpController - 查询请求参数： EmpQueryParam(page=1, pageSize=10, name=, gender=null, begin=null, end=null)
 2025-12-09 23:39:43.846 [http-nio-1001-exec-3] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.apache.ibatis.binding.BindingException: Invalid bound statement (not found): com.my2424huuu.mapper.EmpMapper.list] with root cause
 org.apache.ibatis.binding.BindingException: Invalid bound statement (not found): com.my2424huuu.mapper.EmpMapper.list
 	at org.apache.ibatis.binding.MapperMethod$SqlCommand.<init>(MapperMethod.java:235)
@@ -568,6 +691,24 @@ Caused by: java.net.SocketException: 你的主机中的软件中止了一个已�
 	at com.mysql.cj.protocol.a.SimplePacketReader.readHeader(SimplePacketReader.java:45)
 	at com.mysql.cj.protocol.a.NativeProtocol.readMessage(NativeProtocol.java:575)
 	... 100 common frames omitted
+2025-12-09 23:40:00.656 [main] INFO  c.m.TliasWebManagementApplication - Starting TliasWebManagementApplication using Java 17.0.12 on myhuuu with PID 65884 (E:\amaymay\lernen\Java\JavaWeb\tlias-web-management\target\classes started by 胡卟归- in E:\amaymay\lernen\Java\JavaWeb)
+2025-12-09 23:40:00.659 [main] INFO  c.m.TliasWebManagementApplication - No active profile set, falling back to 1 default profile: "default"
+2025-12-09 23:40:01.607 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 1001 (http)
+2025-12-09 23:40:01.615 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-1001"]
+2025-12-09 23:40:01.615 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-12-09 23:40:01.615 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.68]
+2025-12-09 23:40:01.706 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-12-09 23:40:01.706 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 996 ms
+2025-12-09 23:40:02.026 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+2025-12-09 23:40:02.151 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-1001"]
+2025-12-09 23:40:02.169 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 1001 (http) with context path ''
+2025-12-09 23:40:02.178 [main] INFO  c.m.TliasWebManagementApplication - Started TliasWebManagementApplication in 2.092 seconds (JVM running for 3.138)
+2025-12-09 23:40:05.559 [http-nio-1001-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-09 23:40:05.559 [http-nio-1001-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-12-09 23:40:05.560 [http-nio-1001-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-12-09 23:40:05.585 [http-nio-1001-exec-2] INFO  c.m.controller.DeptController - 查询全部部门数据
+2025-12-09 23:40:05.607 [http-nio-1001-exec-1] INFO  c.m.controller.EmpController - 查询请求参数： EmpQueryParam(page=1, pageSize=10, name=, gender=null, begin=null, end=null)
+2025-12-09 23:40:13.452 [http-nio-1001-exec-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
 2025-12-09 23:40:21.591 [http-nio-1001-exec-1] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.apache.ibatis.binding.BindingException: Invalid bound statement (not found): com.my2424huuu.mapper.EmpMapper.list] with root cause
 org.apache.ibatis.binding.BindingException: Invalid bound statement (not found): com.my2424huuu.mapper.EmpMapper.list
 	at org.apache.ibatis.binding.MapperMethod$SqlCommand.<init>(MapperMethod.java:235)
@@ -630,6 +771,30 @@ org.apache.ibatis.binding.BindingException: Invalid bound statement (not found):
 	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.base/java.lang.Thread.run(Thread.java:842)
+2025-12-09 23:40:21.715 [http-nio-1001-exec-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-12-09 23:40:21.869 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-12-09 23:40:21.874 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-12-09 23:40:41.175 [main] INFO  c.m.TliasWebManagementApplication - Starting TliasWebManagementApplication using Java 17.0.12 on myhuuu with PID 84548 (E:\amaymay\lernen\Java\JavaWeb\tlias-web-management\target\classes started by 胡卟归- in E:\amaymay\lernen\Java\JavaWeb)
+2025-12-09 23:40:41.179 [main] INFO  c.m.TliasWebManagementApplication - No active profile set, falling back to 1 default profile: "default"
+2025-12-09 23:40:42.265 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 1001 (http)
+2025-12-09 23:40:42.274 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-1001"]
+2025-12-09 23:40:42.274 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-12-09 23:40:42.275 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.68]
+2025-12-09 23:40:42.369 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-12-09 23:40:42.369 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1141 ms
+2025-12-09 23:40:42.693 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+2025-12-09 23:40:42.825 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-1001"]
+2025-12-09 23:40:42.843 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 1001 (http) with context path ''
+2025-12-09 23:40:42.853 [main] INFO  c.m.TliasWebManagementApplication - Started TliasWebManagementApplication in 2.111 seconds (JVM running for 2.853)
+2025-12-09 23:40:47.375 [http-nio-1001-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-09 23:40:47.375 [http-nio-1001-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-12-09 23:40:47.376 [http-nio-1001-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-12-09 23:40:47.399 [http-nio-1001-exec-2] INFO  c.m.controller.DeptController - 查询全部部门数据
+2025-12-09 23:40:47.420 [http-nio-1001-exec-1] INFO  c.m.controller.EmpController - 查询请求参数： EmpQueryParam(page=1, pageSize=10, name=, gender=null, begin=null, end=null)
+2025-12-09 23:40:49.516 [http-nio-1001-exec-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-12-09 23:47:43.889 [http-nio-1001-exec-4] INFO  c.m.controller.DeptController - 查询全部部门数据
+2025-12-09 23:47:43.893 [http-nio-1001-exec-3] INFO  c.m.controller.EmpController - 查询请求参数： EmpQueryParam(page=1, pageSize=10, name=, gender=null, begin=null, end=null)
+2025-12-09 23:47:43.893 [http-nio-1001-exec-5] INFO  c.m.controller.EmpController - 查询请求参数： EmpQueryParam(page=1, pageSize=10, name=, gender=null, begin=null, end=null)
 2025-12-09 23:47:43.896 [http-nio-1001-exec-5] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.apache.ibatis.binding.BindingException: Invalid bound statement (not found): com.my2424huuu.mapper.EmpMapper.list] with root cause
 org.apache.ibatis.binding.BindingException: Invalid bound statement (not found): com.my2424huuu.mapper.EmpMapper.list
 	at org.apache.ibatis.binding.MapperMethod$SqlCommand.<init>(MapperMethod.java:235)
@@ -816,6 +981,29 @@ org.apache.ibatis.binding.BindingException: Invalid bound statement (not found):
 	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.base/java.lang.Thread.run(Thread.java:842)
+2025-12-09 23:47:44.056 [http-nio-1001-exec-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-12-09 23:47:44.173 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-12-09 23:47:44.178 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-12-09 23:47:51.787 [main] INFO  c.m.TliasWebManagementApplication - Starting TliasWebManagementApplication using Java 17.0.12 on myhuuu with PID 28764 (E:\amaymay\lernen\Java\JavaWeb\tlias-web-management\target\classes started by 胡卟归- in E:\amaymay\lernen\Java\JavaWeb)
+2025-12-09 23:47:51.792 [main] INFO  c.m.TliasWebManagementApplication - No active profile set, falling back to 1 default profile: "default"
+2025-12-09 23:47:52.822 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 1001 (http)
+2025-12-09 23:47:52.831 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-1001"]
+2025-12-09 23:47:52.831 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-12-09 23:47:52.831 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.68]
+2025-12-09 23:47:52.920 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-12-09 23:47:52.920 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1075 ms
+2025-12-09 23:47:53.239 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+2025-12-09 23:47:53.359 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-1001"]
+2025-12-09 23:47:53.378 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 1001 (http) with context path ''
+2025-12-09 23:47:53.386 [main] INFO  c.m.TliasWebManagementApplication - Started TliasWebManagementApplication in 2.113 seconds (JVM running for 2.928)
+2025-12-09 23:48:01.937 [http-nio-1001-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-09 23:48:01.938 [http-nio-1001-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-12-09 23:48:01.938 [http-nio-1001-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2025-12-09 23:48:01.957 [http-nio-1001-exec-1] INFO  c.m.controller.DeptController - 查询全部部门数据
+2025-12-09 23:48:01.977 [http-nio-1001-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-12-09 23:48:02.118 [http-nio-1001-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-12-09 23:48:32.289 [http-nio-1001-exec-7] INFO  c.m.controller.DeptController - 查询全部部门数据
+2025-12-09 23:48:32.303 [http-nio-1001-exec-4] INFO  c.m.controller.EmpController - 查询请求参数： EmpQueryParam(page=1, pageSize=10, name=, gender=null, begin=null, end=null)
 2025-12-09 23:48:32.309 [http-nio-1001-exec-4] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.apache.ibatis.binding.BindingException: Invalid bound statement (not found): com.my2424huuu.mapper.EmpMapper.list] with root cause
 org.apache.ibatis.binding.BindingException: Invalid bound statement (not found): com.my2424huuu.mapper.EmpMapper.list
 	at org.apache.ibatis.binding.MapperMethod$SqlCommand.<init>(MapperMethod.java:235)
@@ -878,6 +1066,21 @@ org.apache.ibatis.binding.BindingException: Invalid bound statement (not found):
 	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.base/java.lang.Thread.run(Thread.java:842)
+2025-12-09 23:50:59.691 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-12-09 23:50:59.698 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-12-09 23:51:04.127 [main] INFO  c.m.TliasWebManagementApplication - Starting TliasWebManagementApplication using Java 17.0.12 on myhuuu with PID 53064 (E:\amaymay\lernen\Java\JavaWeb\tlias-web-management\target\classes started by 胡卟归- in E:\amaymay\lernen\Java\JavaWeb)
+2025-12-09 23:51:04.130 [main] INFO  c.m.TliasWebManagementApplication - No active profile set, falling back to 1 default profile: "default"
+2025-12-09 23:51:05.121 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 1001 (http)
+2025-12-09 23:51:05.129 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-1001"]
+2025-12-09 23:51:05.130 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-12-09 23:51:05.130 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.68]
+2025-12-09 23:51:05.224 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-12-09 23:51:05.224 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1049 ms
+2025-12-09 23:51:05.430 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'deptController': Unsatisfied dependency expressed through field 'deptService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'deptServiceImpl': Unsatisfied dependency expressed through field 'deptMapper'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'deptMapper' defined in file [E:\amaymay\lernen\Java\JavaWeb\tlias-web-management\target\classes\com\my2424huuu\mapper\DeptMapper.class]: Cannot resolve reference to bean 'sqlSessionTemplate' while setting bean property 'sqlSessionTemplate'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'sqlSessionTemplate' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Unsatisfied dependency expressed through method 'sqlSessionTemplate' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [E:\amaymay\lernen\Java\JavaWeb\tlias-web-management\target\classes\logback.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 2; columnNumber: 16; 文档根元素 "configuration" 必须匹配 DOCTYPE 根 "null"。
+2025-12-09 23:51:05.432 [main] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2025-12-09 23:51:05.441 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
 2025-12-09 23:51:05.458 [main] ERROR o.s.boot.SpringApplication - Application run failed
 org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'deptController': Unsatisfied dependency expressed through field 'deptService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'deptServiceImpl': Unsatisfied dependency expressed through field 'deptMapper'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'deptMapper' defined in file [E:\amaymay\lernen\Java\JavaWeb\tlias-web-management\target\classes\com\my2424huuu\mapper\DeptMapper.class]: Cannot resolve reference to bean 'sqlSessionTemplate' while setting bean property 'sqlSessionTemplate'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'sqlSessionTemplate' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Unsatisfied dependency expressed through method 'sqlSessionTemplate' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [E:\amaymay\lernen\Java\JavaWeb\tlias-web-management\target\classes\logback.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 2; columnNumber: 16; 文档根元素 "configuration" 必须匹配 DOCTYPE 根 "null"。
 	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:659)
@@ -1012,6 +1215,19 @@ Caused by: org.xml.sax.SAXParseException: 文档根元素 "configuration" 必须
 	at java.xml/com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:342)
 	at org.apache.ibatis.parsing.XPathParser.createDocument(XPathParser.java:261)
 	... 88 common frames omitted
+2025-12-09 23:52:00.520 [main] INFO  c.m.TliasWebManagementApplication - Starting TliasWebManagementApplication using Java 17.0.12 on myhuuu with PID 53504 (E:\amaymay\lernen\Java\JavaWeb\tlias-web-management\target\classes started by 胡卟归- in E:\amaymay\lernen\Java\JavaWeb)
+2025-12-09 23:52:00.522 [main] INFO  c.m.TliasWebManagementApplication - No active profile set, falling back to 1 default profile: "default"
+2025-12-09 23:52:01.463 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 1001 (http)
+2025-12-09 23:52:01.474 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-1001"]
+2025-12-09 23:52:01.475 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-12-09 23:52:01.475 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.68]
+2025-12-09 23:52:01.555 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-12-09 23:52:01.555 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 986 ms
+2025-12-09 23:52:01.746 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'deptController': Unsatisfied dependency expressed through field 'deptService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'deptServiceImpl': Unsatisfied dependency expressed through field 'deptMapper'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'deptMapper' defined in file [E:\amaymay\lernen\Java\JavaWeb\tlias-web-management\target\classes\com\my2424huuu\mapper\DeptMapper.class]: Cannot resolve reference to bean 'sqlSessionTemplate' while setting bean property 'sqlSessionTemplate'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'sqlSessionTemplate' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Unsatisfied dependency expressed through method 'sqlSessionTemplate' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [E:\amaymay\lernen\Java\JavaWeb\tlias-web-management\target\classes\logback.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 2; columnNumber: 16; 文档根元素 "configuration" 必须匹配 DOCTYPE 根 "null"。
+2025-12-09 23:52:01.749 [main] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2025-12-09 23:52:01.758 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
 2025-12-09 23:52:01.775 [main] ERROR o.s.boot.SpringApplication - Application run failed
 org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'deptController': Unsatisfied dependency expressed through field 'deptService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'deptServiceImpl': Unsatisfied dependency expressed through field 'deptMapper'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'deptMapper' defined in file [E:\amaymay\lernen\Java\JavaWeb\tlias-web-management\target\classes\com\my2424huuu\mapper\DeptMapper.class]: Cannot resolve reference to bean 'sqlSessionTemplate' while setting bean property 'sqlSessionTemplate'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'sqlSessionTemplate' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Unsatisfied dependency expressed through method 'sqlSessionTemplate' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [E:\amaymay\lernen\Java\JavaWeb\tlias-web-management\target\classes\logback.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 2; columnNumber: 16; 文档根元素 "configuration" 必须匹配 DOCTYPE 根 "null"。
 	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:659)
@@ -1146,3 +1362,27 @@ Caused by: org.xml.sax.SAXParseException: 文档根元素 "configuration" 必须
 	at java.xml/com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:342)
 	at org.apache.ibatis.parsing.XPathParser.createDocument(XPathParser.java:261)
 	... 88 common frames omitted
+2025-12-09 23:53:41.819 [main] INFO  c.m.TliasWebManagementApplication - Starting TliasWebManagementApplication using Java 17.0.12 on myhuuu with PID 83028 (E:\amaymay\lernen\Java\JavaWeb\tlias-web-management\target\classes started by 胡卟归- in E:\amaymay\lernen\Java\JavaWeb)
+2025-12-09 23:53:41.822 [main] INFO  c.m.TliasWebManagementApplication - No active profile set, falling back to 1 default profile: "default"
+2025-12-09 23:53:42.773 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 1001 (http)
+2025-12-09 23:53:42.781 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-1001"]
+2025-12-09 23:53:42.781 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-12-09 23:53:42.781 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.68]
+2025-12-09 23:53:42.866 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-12-09 23:53:42.866 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 997 ms
+2025-12-09 23:53:43.243 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+2025-12-09 23:53:43.372 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-1001"]
+2025-12-09 23:53:43.391 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 1001 (http) with context path ''
+2025-12-09 23:53:43.399 [main] INFO  c.m.TliasWebManagementApplication - Started TliasWebManagementApplication in 1.96 seconds (JVM running for 2.654)
+2025-12-09 23:53:48.339 [http-nio-1001-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-09 23:53:48.340 [http-nio-1001-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-12-09 23:53:48.341 [http-nio-1001-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-12-09 23:53:48.360 [http-nio-1001-exec-1] INFO  c.m.controller.DeptController - 查询全部部门数据
+2025-12-09 23:53:48.378 [http-nio-1001-exec-2] INFO  c.m.controller.EmpController - 查询请求参数： EmpQueryParam(page=1, pageSize=10, name=, gender=null, begin=null, end=null)
+2025-12-09 23:53:48.382 [http-nio-1001-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-12-09 23:53:48.562 [http-nio-1001-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-12-09 23:54:02.064 [http-nio-1001-exec-7] INFO  c.m.controller.EmpController - 查询请求参数： EmpQueryParam(page=2, pageSize=10, name=, gender=null, begin=null, end=null)
+2025-12-09 23:54:03.482 [http-nio-1001-exec-10] INFO  c.m.controller.EmpController - 查询请求参数： EmpQueryParam(page=3, pageSize=10, name=, gender=null, begin=null, end=null)
+2025-12-09 23:54:10.033 [http-nio-1001-exec-5] INFO  c.m.controller.EmpController - 查询请求参数： EmpQueryParam(page=3, pageSize=10, name=阮, gender=null, begin=null, end=null)
+2025-12-09 23:54:10.063 [http-nio-1001-exec-6] INFO  c.m.controller.EmpController - 查询请求参数： EmpQueryParam(page=1, pageSize=10, name=阮, gender=null, begin=null, end=null)
+2025-12-09 23:54:16.314 [http-nio-1001-exec-3] INFO  c.m.controller.EmpController - 查询请求参数： EmpQueryParam(page=1, pageSize=10, name=, gender=1, begin=null, end=null)

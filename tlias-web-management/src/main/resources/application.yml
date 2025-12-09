@@ -11,6 +11,10 @@ spring:
     username: root
     password: yinweisuoyi
 mybatis:
+  # 指定 MyBatis Mapper XML 文件的位置，让 MyBatis 能够找到 EmpMapper.xml
+  # 因为 EmpMapper.list() 方法使用 XML 映射而不是注解，必须配置此路径
+  # 使用 *Mapper.xml 模式只匹配 Mapper 文件，避免匹配到 logback.xml 等其他 XML 文件
+  mapper-locations: classpath:*Mapper.xml
   configuration:
     log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
     map-underscore-to-camel-case: true # 开启驼峰命名和下划线明明的映射
