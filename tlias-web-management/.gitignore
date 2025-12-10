@@ -31,3 +31,9 @@ build/
 
 ### VS Code ###
 .vscode/
+
+### Environment Variables ###
+.env
+
+### Local Configuration Files (包含敏感信息，不要提交) ###
+application.yml
